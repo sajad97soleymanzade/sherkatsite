@@ -17,15 +17,20 @@
             color: #ffffff; /* White text */
             text-align: center;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h1 {
             font-size: 3rem;
             text-transform: uppercase;
             letter-spacing: 2px;
+            margin-bottom: 20px; /* Adds space below the heading */
         }
         .service-button {
             display: inline-block;
             padding: 15px 30px;
-            margin-top: 20px; /* Adds space above the button */
             font-size: 1.2rem;
             color: #fff;
             background-color: #228B22; /* Green color */
@@ -41,8 +46,9 @@
     </style>
 </head>
 <body>
-    <h1>Borhan is here</h1>
-    <!-- Button placed below the text -->
-    <a href="services.html" class="service-button">Our Services</a>
+    <div class="container">
+        <h1>Corrupted Genius is here</h1>
+        <a href="services.html" class="service-button">Our Services</a>
+    </div>
 </body>
 </html>
