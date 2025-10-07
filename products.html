@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borhan Mechanics | Engineering Instruments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b3d91;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      margin-top: 0;
+      color: #0b3d91;
+    }
+
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+
+    .contact a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Borhan Mechanics</h1>
+    <p>Precision Engineering Instruments & Sensors</p>
+  </header>
+
+  <div class="container">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="vibration-sensor.jpg" alt="Vibration Sensor">
+        <div class="product-info">
+          <h3>Vibration Sensor Model VS-101</h3>
+          <p>High-sensitivity accelerometer for machine vibration monitoring.  
+          Frequency range: 0.5–10 kHz</p>
+          <p><strong>Contact for price</strong></p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="pressure-sensor.jpg" alt="Pressure Sensor">
+        <div class="product-info">
+          <h3>Pressure Sensor Model PS-220</h3>
+          <p>Robust stainless-steel sensor for hydraulic and pneumatic systems.</p>
+          <p><strong>Contact for price</strong></p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="daq-device.jpg" alt="Data Acquisition Device">
+        <div class="product-info">
+          <h3>DAQ Device Model DAQ-300</h3>
+          <p>4-channel data acquisition system for vibration and temperature inputs.</p>
+          <p><strong>Contact for price</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact Us</p>
+    <div class="contact">
+      📧 Email: <a href="mailto:info@borhanmechanics.ir">info@borhanmechanics.ir</a><br>
+      📞 Phone: <a href="tel:+989121234567">+98 912 123 4567</a><br>
+      💬 WhatsApp: <a href="https://wa.me/989121234567" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </footer>
+</body>
+</html>
