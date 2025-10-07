@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Borhan Mechanics | Engineering Instruments</title>
+  <title>برهان مکانیک | ابزارهای مهندسی دقیق</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9fafb;
+      font-family: "B Nazanin", "Tahoma", sans-serif;
+      background-color: #121212; /* پس‌زمینه تیره */
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #ffffff; /* متن سفید */
+      direction: rtl;
     }
 
     header {
-      background-color: #0b3d91;
+      background-color: #228B22; /* سبز اصلی */
       color: white;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 2em;
     }
 
     .container {
@@ -31,54 +32,69 @@
       margin: 30px auto;
     }
 
+    h2 {
+      text-align: center;
+      color: #32cd32; /* سبز روشن‌تر */
+      margin-bottom: 25px;
+    }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
 
     .product-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background-color: #1e1e1e; /* پس‌زمینه کارت */
+      border: 1px solid #2e8b57;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
       overflow: hidden;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .product-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 5px 15px rgba(0, 255, 0, 0.25);
     }
 
     .product-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
+      border-bottom: 2px solid #228B22;
     }
 
     .product-info {
       padding: 15px;
+      text-align: right;
     }
 
     .product-info h3 {
       margin-top: 0;
-      color: #0b3d91;
+      color: #7CFC00; /* سبز لیمویی */
+    }
+
+    .product-info p {
+      color: #cccccc;
+      line-height: 1.6;
     }
 
     footer {
-      background-color: #0b3d91;
+      background-color: #1C741C; /* سبز تیره */
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       margin-top: 40px;
     }
 
     .contact {
       margin-top: 10px;
-      font-size: 0.95em;
+      font-size: 1em;
     }
 
     .contact a {
-      color: #ffd700;
+      color: #7CFC00;
       text-decoration: none;
       font-weight: bold;
     }
@@ -90,52 +106,52 @@
 </head>
 <body>
   <header>
-    <h1>Borhan Mechanics</h1>
-    <p>Precision Engineering Instruments & Sensors</p>
+    <h1>برهان مکانیک</h1>
+    <p>ابزارها و حسگرهای مهندسی دقیق</p>
   </header>
 
   <div class="container">
-    <h2>Our Products</h2>
+    <h2>محصولات ما</h2>
     <div class="product-grid">
       <!-- Product 1 -->
       <div class="product-card">
-        <img src="vibration-sensor.jpg" alt="Vibration Sensor">
+        <img src="vibration-sensor.jpg" alt="سنسور ارتعاش">
         <div class="product-info">
-          <h3>Vibration Sensor Model VS-101</h3>
-          <p>High-sensitivity accelerometer for machine vibration monitoring.  
-          Frequency range: 0.5–10 kHz</p>
-          <p><strong>Contact for price</strong></p>
+          <h3>سنسور ارتعاش مدل VS-101</h3>
+          <p>شتاب‌سنج با حساسیت بالا برای پایش ارتعاش ماشین‌آلات.<br>
+          بازه فرکانسی: ۰٫۵ تا ۱۰ کیلوهرتز</p>
+          <p><strong>برای اطلاع از قیمت تماس بگیرید</strong></p>
         </div>
       </div>
 
       <!-- Product 2 -->
       <div class="product-card">
-        <img src="pressure-sensor.jpg" alt="Pressure Sensor">
+        <img src="pressure-sensor.jpg" alt="سنسور فشار">
         <div class="product-info">
-          <h3>Pressure Sensor Model PS-220</h3>
-          <p>Robust stainless-steel sensor for hydraulic and pneumatic systems.</p>
-          <p><strong>Contact for price</strong></p>
+          <h3>سنسور فشار مدل PS-220</h3>
+          <p>سنسور مقاوم از جنس استیل ضدزنگ مناسب برای سیستم‌های هیدرولیک و پنوماتیک.</p>
+          <p><strong>برای اطلاع از قیمت تماس بگیرید</strong></p>
         </div>
       </div>
 
       <!-- Product 3 -->
       <div class="product-card">
-        <img src="daq-device.jpg" alt="Data Acquisition Device">
+        <img src="daq-device.jpg" alt="دستگاه جمع‌آوری داده">
         <div class="product-info">
-          <h3>DAQ Device Model DAQ-300</h3>
-          <p>4-channel data acquisition system for vibration and temperature inputs.</p>
-          <p><strong>Contact for price</strong></p>
+          <h3>دستگاه DAQ مدل DAQ-300</h3>
+          <p>سیستم چهارکاناله جمع‌آوری داده برای ورودی‌های ارتعاش و دما.</p>
+          <p><strong>برای اطلاع از قیمت تماس بگیرید</strong></p>
         </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>Contact Us</p>
+    <p>ارتباط با ما</p>
     <div class="contact">
-      📧 Email: <a href="mailto:info@borhanmechanics.ir">info@borhanmechanics.ir</a><br>
-      📞 Phone: <a href="tel:+989121234567">+98 912 123 4567</a><br>
-      💬 WhatsApp: <a href="https://wa.me/989121234567" target="_blank">Chat on WhatsApp</a>
+      📧 ایمیل: <a href="mailto:info@borhanmechanics.ir">info@borhanmechanics.ir</a><br>
+      📞 تلفن: <a href="tel:+989199757955">+98 912 123 4567</a><br>
+      💬 واتساپ: <a href="https://wa.me/989121234567" target="_blank">گفتگو در واتساپ</a>
     </div>
   </footer>
 </body>
