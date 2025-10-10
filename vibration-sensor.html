@@ -7,17 +7,19 @@
   <style>
     body {
       font-family: "B Nazanin", "Tahoma", sans-serif;
-      background-color: #121212;
+      background-color: #f9fafb;
+      color: #222;
       margin: 0;
       padding: 0;
-      color: #ffffff;
+      direction: rtl;
     }
 
     header {
-      background-color: #228B22;
+      background-color: #004aad;
       color: white;
-      padding: 25px;
+      padding: 25px 15px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
     header h1 {
@@ -25,50 +27,62 @@
       font-size: 2em;
     }
 
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
     .container {
       width: 90%;
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     .product-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
     }
 
     .product-section img {
       width: 100%;
-      max-width: 450px;
+      max-width: 420px;
       border-radius: 10px;
-      border: 2px solid #2e8b57;
+      border: 1px solid #ddd;
       margin-bottom: 20px;
-      box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .product-section img:hover {
+      transform: scale(1.03);
     }
 
     .product-section h2 {
-      color: #7CFC00;
+      color: #004aad;
       margin-bottom: 10px;
     }
 
     .product-section p {
-      color: #cccccc;
+      color: #444;
       line-height: 1.8;
+      font-size: 1.05em;
       max-width: 700px;
+      margin: 0 auto;
     }
 
     .specs {
       margin-top: 40px;
-      background-color: #1e1e1e;
+      background-color: #f5f7fa;
       border-radius: 10px;
-      padding: 20px;
-      border: 1px solid #2e8b57;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+      padding: 25px;
+      border: 1px solid #e0e0e0;
     }
 
     .specs h3 {
-      color: #32cd32;
+      color: #004aad;
       text-align: center;
       margin-bottom: 20px;
     }
@@ -76,55 +90,59 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      color: #ddd;
-      font-size: 1.1em;
+      color: #333;
+      font-size: 1em;
     }
 
     th, td {
       padding: 12px 15px;
       text-align: right;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #ddd;
     }
 
     th {
-      color: #7CFC00;
-      width: 40%;
+      width: 35%;
+      color: #004aad;
+      font-weight: bold;
     }
 
     tr:hover {
-      background-color: #1a1a1a;
+      background-color: #f1f5fb;
     }
 
     .back-link {
       display: inline-block;
       margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #228B22;
+      padding: 12px 24px;
+      background-color: #004aad;
       color: white;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
+      font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
     .back-link:hover {
-      background-color: #1C741C;
+      background-color: #003b8a;
     }
 
     footer {
-      background-color: #1C741C;
-      color: white;
+      background-color: #f5f7fa;
+      color: #333;
       text-align: center;
-      padding: 25px;
-      margin-top: 40px;
+      padding: 30px;
+      margin-top: 50px;
+      border-top: 1px solid #e0e0e0;
     }
 
     .contact {
       margin-top: 10px;
       font-size: 1em;
+      line-height: 1.8;
     }
 
     .contact a {
-      color: #7CFC00;
+      color: #004aad;
       text-decoration: none;
       font-weight: bold;
     }
@@ -134,8 +152,8 @@
     }
 
     @media (max-width: 600px) {
-      .product-section img {
-        max-width: 90%;
+      .container {
+        padding: 20px;
       }
     }
   </style>
@@ -160,46 +178,16 @@
     <div class="specs">
       <h3>مشخصات فنی</h3>
       <table>
-        <tr>
-          <th>مدل</th>
-          <td>PCE-VT-3900</td>
-        </tr>
-        <tr>
-          <th>نوع سنسور</th>
-          <td>شتاب‌سنج پیزوالکتریک</td>
-        </tr>
-        <tr>
-          <th>بازه فرکانسی</th>
-          <td>۰٫۵ تا ۱۰ کیلوهرتز</td>
-        </tr>
-        <tr>
-          <th>حساسیت</th>
-          <td>100 mV/g ±10%</td>
-        </tr>
-        <tr>
-          <th>محدوده اندازه‌گیری</th>
-          <td>±50 g</td>
-        </tr>
-        <tr>
-          <th>خروجی</th>
-          <td>سیگنال آنالوگ (IEPE)</td>
-        </tr>
-        <tr>
-          <th>منبع تغذیه</th>
-          <td>24 VDC (از طریق خط سیگنال)</td>
-        </tr>
-        <tr>
-          <th>دمای کاری</th>
-          <td>-20 تا +80 درجه سانتی‌گراد</td>
-        </tr>
-        <tr>
-          <th>وزن</th>
-          <td>65 گرم</td>
-        </tr>
-        <tr>
-          <th>جنس بدنه</th>
-          <td>استیل ضد زنگ</td>
-        </tr>
+        <tr><th>مدل</th><td>PCE-VT-3900</td></tr>
+        <tr><th>نوع سنسور</th><td>شتاب‌سنج پیزوالکتریک</td></tr>
+        <tr><th>بازه فرکانسی</th><td>۰٫۵ تا ۱۰ کیلوهرتز</td></tr>
+        <tr><th>حساسیت</th><td>100 mV/g ±10%</td></tr>
+        <tr><th>محدوده اندازه‌گیری</th><td>±50 g</td></tr>
+        <tr><th>خروجی</th><td>سیگنال آنالوگ (IEPE)</td></tr>
+        <tr><th>منبع تغذیه</th><td>24 VDC (از طریق خط سیگنال)</td></tr>
+        <tr><th>دمای کاری</th><td>-20 تا +80 درجه سانتی‌گراد</td></tr>
+        <tr><th>وزن</th><td>65 گرم</td></tr>
+        <tr><th>جنس بدنه</th><td>استیل ضد زنگ</td></tr>
       </table>
     </div>
 
@@ -218,3 +206,4 @@
   </footer>
 </body>
 </html>
+
