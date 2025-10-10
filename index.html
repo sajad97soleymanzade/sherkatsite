@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برهان فن آوران</title>
-    <style>
-        body {
-            font-family: "B Nazanin", "Tahoma", sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #121212;
-            color: #ffffff;
-            text-align: center;
-            direction: rtl;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-            margin-bottom: 30px;
-        }
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .service-button {
-            display: inline-block;
-            padding: 15px 40px;
-            font-size: 1.2rem;
-            color: #fff;
-            background-color: #228B22;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .service-button:hover {
-            background-color: #1C741C;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برهان فن‌آوران ایرانیان</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', 'B Nazanin', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(145deg, #f4f7f9, #e8ecf1);
+      color: #222;
+      text-align: center;
+      direction: rtl;
+    }
+
+    .container {
+      background: #ffffffcc;
+      backdrop-filter: blur(6px);
+      padding: 50px 60px;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 35px;
+      color: #0a2342;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .service-button {
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 1.1rem;
+      color: #fff;
+      background: linear-gradient(135deg, #0078d7, #00a1e4);
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .service-button:hover {
+      background: linear-gradient(135deg, #005fa3, #007bb8);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .service-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1> شرکت برهان فن آوران ایرانیان </h1>
-        <div class="button-group">
-            <a href="services.html" class="service-button">خدمات ما</a>
-            <a href="products.html" class="service-button">محصولات ما</a>
-        </div>
+  <div class="container">
+    <h1>شرکت برهان فن‌آوران ایرانیان</h1>
+    <div class="button-group">
+      <a href="services.html" class="service-button">خدمات ما</a>
+      <a href="products.html" class="service-button">محصولات ما</a>
     </div>
+  </div>
 </body>
 </html>
